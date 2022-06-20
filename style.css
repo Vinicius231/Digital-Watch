@@ -1,24 +1,20 @@
-body{
-    background: rgb(1, 120, 255);
-}
 div{
-    display: flex;
-}
-section{
-    background: white;
-    width: 700px;
-    height: 350px;
-    margin: auto;
+    background: rgb(18,18,18);
+    width: 600px;
+    height: 300px;
     border-radius: 15px;
     box-shadow: 5px 5px 10px black;
-}
-div{
-    font: normal 40pt Arial;
     text-align: center;
-    width: 210px;
     margin: auto;
 }
+body{
+    color: white;
+    background: linear-gradient(to right, yellow, rgb(0, 255, 0));
+}
 h1{
-    text-align: center;
-    font: normal 30pt Arial;
+    font-size: 35pt;
+    color: yellow;
+}
+p{
+    font-size: 30pt;
 }
