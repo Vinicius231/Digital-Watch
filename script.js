@@ -1,24 +1,18 @@
-var date = new Date()
-var hora = date.getHours()
-var minuto = date.getMinutes()
-var segundo =  date.getSeconds()
+setInterval(horasatualmente,500)
 
-setInterval(contador, 1000)
+function horasatualmente(){
+    
+    var tempo = new Date()
+    var hora = tempo.getHours()
+    var minuto = tempo.getMinutes()
+    var segundo = tempo.getSeconds()
 
-if(segundo<10){segundo= '0'+segundo}
-if(minuto<10){minuto='0'+minuto}
-if(hora<10){hora='0'+hora}
+    if(hora<10){hora='0'+hora}
+    if(minuto<10){minuto='0'+minuto}
+    if(segundo<10){segundo= '0'+segundo}
 
-function contador(){
-    segundo++
-    document.getElementById('horas').innerHTML = hora+':'
-    document.getElementById('minutos').innerHTML = minuto+':'
-    document.getElementById('segundos').innerHTML = segundo
-   
-    if(segundo== 59){
-        minuto++
-        segundo = 0
-        if(minuto<10){minuto='0'+minuto}
-        if(segundo<10){segundo= '0'+segundo}
-    }
+    var relogio = document.getElementById('horas')
+
+    relogio.innerHTML = `${hora}:${minuto}:${segundo}`
+
 }
